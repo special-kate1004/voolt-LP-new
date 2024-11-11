@@ -81,7 +81,7 @@ $(document).ready(function () {
   let t = $("#thumbnail");
   $("#thumbnail").click(function () {
     $(".thumbnail").hide();
-    $(".video-dekstop").onClick();
+    $(".video-dekstop").click();
   }),
     $(".testimonial-holder").slick({
       dots: !1,
