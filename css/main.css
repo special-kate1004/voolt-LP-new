@@ -991,7 +991,6 @@ h2 {
   align-items: flex-start;
 }
 .btnplace p {
-  color: #fff;
   font-family: "General Sans", sans-serif;
   font-size: 23px;
   /* font-style: italic; */
@@ -1000,6 +999,11 @@ h2 {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.charged .btnplace p,
+.video-section .btnplace p {
+  color: #fff !important;
 }
 
 .buttons {
@@ -1116,7 +1120,7 @@ h2 {
   }
 
   .hero {
-    background: url("../img/hero-mobile-bg.png");
+    background: url("../img/hero-mobile-bg.webp");
     background-size: cover;
     border-radius: 0;
   }
@@ -1360,7 +1364,7 @@ h2 {
 }
 
 .start-ad {
-  background: url("../img/start-ad-bg.png");
+  background: url("../img/start-ad-bg.webp");
   background-size: cover;
   padding: 80px;
   font-family: "General Sans", sans-serif;
@@ -1422,6 +1426,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-top: 42px;
+  padding: 0 80px;
 }
 .ad-left-content div {
   display: flex;
@@ -1515,6 +1520,7 @@ h2 {
   letter-spacing: 0.48px;
   padding-top: 24px;
   padding-bottom: 32px;
+  text-align: left;
 }
 
 .start-ad .features {
@@ -1631,6 +1637,9 @@ h2 {
 @media screen and (max-width: 1440px) {
   .start-ad .primary-button {
     padding: 16px 32px;
+  }
+  .start-ad .ad-left-content {
+    padding: 0;
   }
 }
 
@@ -1794,7 +1803,7 @@ h2 {
 }
 .how-it-works {
   padding: 80px 0px;
-  background: url("../img/how-it-works-bg.png");
+  background: url("../img/how-it-works-bg.webp");
   background-size: cover;
 }
 .how-it-works .wrapper {
@@ -1824,7 +1833,7 @@ h2 {
   background: transparent;
   border: 0px;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 50px);
   transform: translateY(-50%);
   padding: 0;
 }
@@ -1927,6 +1936,11 @@ h2 {
   font-weight: 700;
   line-height: 125%; /* 35.556px */
   font-family: "General Sans";
+}
+
+.how-it-works .slick-slide .slide-box .image img {
+  max-height: 580px;
+  margin: auto;
 }
 
 .how-it-works .slick-dots .dot-content {
@@ -2074,6 +2088,12 @@ h2 {
   }
 }
 
+@media screen and (max-width: 1145px) {
+  .how-it-works .slick-arrow {
+    top: calc(50% - 100px);
+  }
+}
+
 @media screen and (max-width: 992px) {
   .how-it-works {
     background: none;
@@ -2126,7 +2146,6 @@ h2 {
     font-size: 18px !important;
     max-width: 340px;
     min-height: 56px;
-    border-radius: 7px;
   }
   .how-it-works .how-marketing-holder {
     margin-top: 20px;
@@ -2439,7 +2458,7 @@ h2 {
 }
 .charged {
   background: #091a3f;
-  background-image: url("../img/changed-bg.png");
+  background-image: url("../img/changed-bg.webp");
   background-size: cover;
 }
 
@@ -2792,8 +2811,8 @@ h2 {
   }
 
   .primary-button {
-    max-width: 100%;
     width: 100%;
+    max-width: 100% !important;
   }
 }
 
@@ -2990,6 +3009,10 @@ h2 {
     height: 14px !important;
   }
 
+  .how-we-compare .table td .td-images img {
+    width: auto !important;
+  }
+
   .table th:nth-child(2),
   .table td:nth-child(2) {
     min-width: 90px;
@@ -3150,21 +3173,21 @@ h2 {
   border-radius: 12px;
   border: 1px solid #e4e4e7;
   background: radial-gradient(
-      421.15% 95.62% at -22.08% 75.58%,
+      62.11% 176.91% at -14.46% -43.21%,
+      rgba(128, 0, 255, 0.1) 0%,
+      rgba(128, 0, 255, 0) 100%
+    ),
+    radial-gradient(
+      69.76% 205.18% at -20.51% 7.5%,
       rgba(255, 210, 10, 0.1) 0%,
       rgba(255, 210, 10, 0) 100%
     ),
     radial-gradient(
-      421.3% 73.41% at -6.23% -29.87%,
-      rgba(128, 0, 255, 0.14) 0%,
-      rgba(128, 0, 255, 0) 100%
-    ),
-    radial-gradient(
-      460.8% 118.31% at 102.31% 106.71%,
-      rgba(0, 148, 255, 0.11) 0%,
+      70% 147.54% at 112.26% 137.93%,
+      rgba(0, 148, 255, 0.08) 0%,
       rgba(0, 148, 255, 0) 100%
     ),
-    var(--Color-Gray-100, #f3f4f6);
+    #f9fafb;
   text-align: center;
   padding: 140.5px 80px;
   display: flex !important;
@@ -3213,7 +3236,7 @@ h2 {
 .video-section {
   padding: 82px 0px;
   background-color: #091a3f;
-  background-image: url("../img/video-section.png");
+  background-image: url("../img/video-section.webp");
   background-size: cover;
 }
 .video-section h2 {
@@ -3246,7 +3269,7 @@ h2 {
 .video-section .thumbnail {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 104%;
   background-color: transparent;
   display: flex;
   justify-content: center;
