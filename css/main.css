@@ -3331,6 +3331,9 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .video-section .video-container iframe {
+    height: 50vw;
+  }
   .testominals .wrapper {
     padding: 0 40px !important;
   }
@@ -3340,7 +3343,6 @@ h2 {
   .mobile-aspect::before {
     content: "";
     display: block;
-    padding-top: 74.78%;
   }
   .mobile-aspect video {
     position: absolute;
