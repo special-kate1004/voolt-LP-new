@@ -1839,6 +1839,7 @@ h2 {
 .how-it-works .slick-list {
   left: 40px;
 }
+
 .how-it-works .how-marketing-holder {
   display: flex;
   justify-content: space-between;
@@ -1994,6 +1995,7 @@ h2 {
   font-weight: 600;
   line-height: 140%;
   max-width: 405px;
+  display: none;
 }
 
 .how-it-works .slick-dots .normal-dot {
@@ -2013,6 +2015,11 @@ h2 {
 
 .how-it-works .slick-list .slide-description br {
   display: none;
+}
+
+.how-we-compare {
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1400px) {
@@ -2108,6 +2115,10 @@ h2 {
 
   .how-it-works .slick-arrow {
     top: calc(50% - 100px);
+  }
+
+  .how-it-works .bottom-content {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2281,6 +2292,7 @@ h2 {
   transform: translateY(-50%);
   max-width: 520px;
   width: calc(50% - 40px);
+  pointer-events: none;
 }
 
 .does-item .inside-box {
@@ -2564,10 +2576,6 @@ h2 {
   padding: 80px 0px;
   position: relative;
   background: #fafafa;
-}
-
-.track-leads {
-  z-index: -1;
 }
 
 .communicate-directly {
@@ -3228,7 +3236,7 @@ h2 {
   overflow: hidden;
   height: 623px;
 }
-.video-section .video-container video {
+.video-section .video-container iframe {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

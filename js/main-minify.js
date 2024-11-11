@@ -80,10 +80,8 @@ $(document).ready(function () {
     }));
   let t = $("#thumbnail");
   $("#thumbnail").click(function () {
-    let e = $(window).width();
-    e >= 768
-      ? ($(".video-dekstop").css("display", "block").get(0).play(), t.hide())
-      : ($(".video-mobile").css("display", "block").get(0).play(), t.hide());
+    $(".thumbnail").hide();
+    $(".video-dekstop").onClick();
   }),
     $(".testimonial-holder").slick({
       dots: !1,
