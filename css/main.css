@@ -266,7 +266,7 @@ h2 {
 }
 
 .primary-button--blue {
-  background: #058beb;
+  background: #058beb !important;
   color: #f7f7ff;
 }
 .primary-button--blue:hover {
