@@ -268,6 +268,8 @@ h2 {
 .primary-button--blue {
   background: #058beb !important;
   color: #f7f7ff;
+  font-size: 16px;
+  padding-top: 20px 91.5px !important;
 }
 .primary-button--blue:hover {
   background: color-mix(in srgb, #058beb, #000 50%);
@@ -1023,6 +1025,7 @@ h2 {
 }
 .hero-right picture img {
   max-width: 100%;
+  width: 100%;
 }
 
 .hero-left .h-mobile {
@@ -1407,7 +1410,7 @@ h2 {
 .start-ad .btnplace .primary-button {
   max-width: 417px;
   width: 100%;
-  padding: 10px 0px;
+  font-size: 16px;
 }
 
 .ads-block {
