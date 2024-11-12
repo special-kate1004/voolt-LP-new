@@ -161,17 +161,4 @@ $(document).ready(function () {
     $(".table-w-slider2 .pager .arrow-prev").click(function (e) {
       e.preventDefault(), i(".table-w-slider2", "prev");
     });
-  // $("img, button, a").click(function (e) {
-  //   if (
-  //     !$(this).hasClass("slick-arrow") &&
-  //     !$(this).hasClass("custom-dot-class") &&
-  //     !$(this).hasClass("arrow") &&
-  //     !$(this).hasClass("compare-tabs") &&
-  //     !$(this).hasClass("stop-redirect")
-  //   ) {
-  //     e.preventDefault();
-  //     var e = new URL(window.location.href).search;
-  //     window.location.href = "https://try.voolt.com/marketing2/1/" + e;
-  //   }
-  // });
 });
