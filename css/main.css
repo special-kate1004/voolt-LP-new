@@ -549,7 +549,6 @@ h2 {
   }
   .table-w-slider .active-in-slider {
     display: block !important;
-    min-width: 160px;
   }
   .table-w-slider2 th:nth-child(3),
   .table-w-slider2 th:nth-child(4),
@@ -563,7 +562,6 @@ h2 {
   }
   .table-w-slider2 .active-in-slider {
     display: block !important;
-    min-width: 160px;
   }
   .table th .table-top-title {
     width: 105px;
@@ -644,7 +642,7 @@ h2 {
   }
   .table .td-images img {
     max-height: 16px;
-    max-width: 60px;
+    max-width: 100% !important;
   }
 }
 @media screen and (max-width: 500px) {
