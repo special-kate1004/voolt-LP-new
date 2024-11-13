@@ -79,9 +79,32 @@ $(document).ready(function () {
             e(this).find(".image-box").slideDown(150));
     }));
   let t = $("#thumbnail");
+  $("#player").hide();
+
   $("#thumbnail").click(function () {
     $(".thumbnail").hide();
-    $(".video-dekstop").click();
+
+    let container = $(".vimeo-iframe-container");
+    container.html(`
+    <iframe
+      loading="lazy"
+      src="https://player.vimeo.com/video/1028960084?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      "
+      title="Educational_Video_16_9"
+    ></iframe>
+  `);
+
+    let frame = $("iframe");
+    let player = new Vimeo.Player(frame);
+    player.play();
   }),
     $(".testimonial-holder").slick({
       dots: !1,
